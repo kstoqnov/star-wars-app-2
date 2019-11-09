@@ -13,19 +13,45 @@ import { THEME } from './utils/js/constants';
 import { defaultOptions } from './utils/js/defaultOptionsApolloClient';
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:4000'
+    uri: process.env.REACT_APP_API_URL
 });
+
+const cache = new InMemoryCache();
+
+const authLink = setContext((_, { headers }) => {
+    const token = localStorage.getItem(process.env.REACT_APP_API_KEY);
+    return {
+        headers: {
+        ...headers,
+        authorization: token ? `Bearer ${token}` : '',
+        },
+    };
+});
+
 
 const client = new ApolloClient({
-    link: httpLink,
-    cache: new InMemoryCache()
+    link: authLink.concat(httpLink),
+    cache,
+    name: 'react-web-client',
+    version: '1.3',
+    queryDeduplication: false,
+    defaultOptions
 });
 
+
+client.writeData({
+    data: {
+        isLoggedIn: !!localStorage.getItem(process.env.REACT_APP_API_KEY),
+        theme: !localStorage.getItem(THEME) ? 'light' : localStorage.getItem(THEME)
+    },
+});
 
 ReactDOM.render(
     <ApolloProvider client={client}>
-        <App />
-    </ApolloProvider>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </ApolloProvider>,
 document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
