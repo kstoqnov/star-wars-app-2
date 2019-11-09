@@ -7,7 +7,10 @@ import { ApolloProvider } from 'react-apollo';
 import { ApolloClient } from 'apollo-client';
 import { createHttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
-
+import { BrowserRouter } from 'react-router-dom';
+import { setContext } from 'apollo-link-context';
+import { THEME } from './utils/js/constants';
+import { defaultOptions } from './utils/js/defaultOptionsApolloClient';
 
 const httpLink = createHttpLink({
     uri: 'http://localhost:4000'
