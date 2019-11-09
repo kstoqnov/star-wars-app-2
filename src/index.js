@@ -47,10 +47,10 @@ client.writeData({
 });
 
 ReactDOM.render(
-    <ApolloProvider client={client}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+   <ApolloProvider client={client}>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
   </ApolloProvider>,
 document.getElementById('root'));
 
