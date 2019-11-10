@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomButtonComponent from '../../app_custom_components/style_components/CustomButtonComponent';
+import CustomButtonComponent from '../../../utils/container_components/CustomButtonComponent';
 import CharacterCardComponent from './CharacterCardComponent';
 
 import { CharWrapper, CharContainer } from '../css/characters.css';

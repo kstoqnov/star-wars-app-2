@@ -1,6 +1,5 @@
-import SFDistantGalaxyRegular from '../../app_fonts/SFDistantGalaxyRegular.ttf';
-
-
+import SFDistantGalaxyRegular from '../../fonts/SFDistantGalaxyRegular.ttf';
+ 
 import { createGlobalStyle } from 'styled-components';
 
 

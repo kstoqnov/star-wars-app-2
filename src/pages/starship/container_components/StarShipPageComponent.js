@@ -1,6 +1,6 @@
 import React from 'react';
-import StarShipDetailsComponent from '../style_components/StarShipDetailsComponent';
-import RadarComponent from '../style_components/RadarComponent';
+import StarShipDetailsComponent from './StarShipDetailsComponent';
+import RadarComponent from './RadarComponent';
 
 import { ShipDetailsWrapper, ShipDetailsContainer } from '../css/starship.css';
 

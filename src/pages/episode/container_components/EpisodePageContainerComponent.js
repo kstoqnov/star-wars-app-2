@@ -1,5 +1,5 @@
 import React from 'react';
-import EpisodePageComponent from '../style_components/EpisodePageComponent';
+import EpisodePageComponent from './EpisodePageComponent';
 import SpinnerComponent from '../../../utils/container_components/SpinnerComponent';
 
 import { loader } from 'graphql.macro';

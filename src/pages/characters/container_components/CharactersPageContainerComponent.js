@@ -1,5 +1,5 @@
 import React from 'react';
-import CharactersPageComponent from '../style_components/CharactersPageComponent';
+import CharactersPageComponent from './CharactersPageComponent';
 import SpinnerComponent from '../../../utils/container_components/SpinnerComponent';
 
 import { loader } from 'graphql.macro';

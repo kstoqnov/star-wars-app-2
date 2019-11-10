@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginPageComponent from '../style_components/LoginPageComponent';
+import LoginPageComponent from './LoginPageComponent';
 import SpinnerComponent from '../../../utils/container_components/SpinnerComponent';
 
 import { loader } from "graphql.macro";

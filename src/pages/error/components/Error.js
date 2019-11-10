@@ -1,9 +1,10 @@
 import React from 'react';
+import noImag from "../../../utils/images/no_image.jpg"
 
 export const Error = () => (
     <div>
       <p>Oh no! Something went wrong.</p>
-      <img src="dasdas" alt="error image" />
+      <img src={noImag} alt="error" />
       <p>Please refresh and try again.</p>
     </div>
 );

@@ -1,8 +1,8 @@
 import React from 'react';
 import CharacterCardComponent from './CharacterCardComponent';
-import CustomButtonComponent from '../../app_custom_components/style_components/CustomButtonComponent';
+import CustomButtonComponent from '../../../utils/container_components/CustomButtonComponent';
 
-import { CharWrapper, CharContainer } from '../../app_characters_page_components/css/characters.css';
+import { CharWrapper, CharContainer } from '../css/characters.css';
 import { EpisodeContainer, ImgCard, Info, TitleContainer } from '../css/episode.css';
 import { numToRomanNum } from '../../../utils/js/numToRomanNum';
 import { MISSING_IMG } from '../../../utils/js/constants';

@@ -1,5 +1,5 @@
 import React from 'react';
-import StarShipPageComponent from '../style_components/StarShipPageComponent';
+import StarShipPageComponent from './StarShipPageComponent';
 import SpinnerComponent from '../../../utils/container_components/SpinnerComponent';
 
 import { loader } from 'graphql.macro';

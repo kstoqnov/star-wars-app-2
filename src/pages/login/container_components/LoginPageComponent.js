@@ -1,7 +1,7 @@
 import React from 'react';
-import CustomButtonComponent from '../../app_custom_components/style_components/CustomButtonComponent';
-import FormInputComponent from '../../app_custom_components/style_components/FormInputComponent';
-import LogoContainerComponent from '../../app_custom_components/container_components/LogoContainerComponent';
+import CustomButtonComponent from '../../../utils/container_components/CustomButtonComponent';
+import FormInputComponent from './FormInputComponent';
+import LogoContainerComponent from '../../../header/logo/LogoContainerComponent';
 
 import { ErrorMessage, SignInContainer, FormContainer } from '../css/login.css';
 
