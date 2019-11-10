@@ -11,12 +11,13 @@ import { useQuery } from '@apollo/react-hooks';
 
 
 const GET_THEME = loader('./graphql_schemas/getTheme.gql');
-
+const IS_LOGGED_IN = loader('./graphql_schemas/isLoggedIn.gql');
 
 function App() {
 
   const { data: {theme} } = useQuery(GET_THEME);
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const { data } = useQuery(IS_LOGGED_IN);
 
   return (
 
@@ -26,7 +27,7 @@ function App() {
 
       <ErrorBoundaryComponent>
 
-          <Header/>
+          {data.isLoggedIn ? <Header/> : ''}
           <Main/>
 
       </ErrorBoundaryComponent>
