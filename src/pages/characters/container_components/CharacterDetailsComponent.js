@@ -1,5 +1,5 @@
 import React from 'react';
-import StarShipCardComponent from '../../app_starship_page_components/style_components/StarShipCardComponent';
+import StarShipCardComponent from '../../starship/container_components/StarShipCardComponent';
 
 import { MISSING_IMG } from '../../../utils/js/constants';
 import {ImageContainer} from '../../../utils/container_components/ImageContainer';

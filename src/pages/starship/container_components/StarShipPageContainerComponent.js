@@ -1,14 +1,14 @@
 import React from 'react';
 import StarShipPageComponent from '../style_components/StarShipPageComponent';
-import SpinnerComponent from '../../app_custom_components/style_components/SpinnerComponent';
+import SpinnerComponent from '../../../utils/container_components/SpinnerComponent';
 
 import { loader } from 'graphql.macro';
 import { CalculateRadarStats } from './CalculateRadarStats';
-import { ALL_STAR_SHIPS } from '../../app_utils/js/constants';
+import { ALL_STAR_SHIPS } from '../../../utils/js/constants';
 import { useQuery } from '@apollo/react-hooks';
  
 
-const GET_STAR_SHIPS = loader('../../app_graphql_schemas/getStarShips.gql');
+const GET_STAR_SHIPS = loader('../../../graphql_schemas/getStarShips.gql');
 
 
 const StarShipPageContainerComponent = ({ match }) => {

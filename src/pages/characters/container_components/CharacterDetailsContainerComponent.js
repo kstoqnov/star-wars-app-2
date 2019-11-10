@@ -1,12 +1,12 @@
 import React from 'react';
-import CharacterDetailsComponent from '../style_components/CharacterDetailsComponent';
-import SpinnerComponent from '../../app_custom_components/style_components/SpinnerComponent';
+import CharacterDetailsComponent from './CharacterDetailsComponent';
+import SpinnerComponent from '../../../utils/container_components/SpinnerComponent';
 
 import { loader } from 'graphql.macro';
 import { useQuery } from '@apollo/react-hooks';
  
 
-const GET_PERSON = loader('../../app_graphql_schemas/getPerson.gql');
+const GET_PERSON = loader('../../../graphql_schemas/getPerson.gql');
 
 
 const CharacterDetailsContainerComponent = ({ match }) => {

@@ -2,8 +2,8 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 import { Card, CardInner, CardMedia, CardMeta, Title, Description } from '../css/episode-card.css';
-import { MISSING_IMG } from '../../app_utils/js/constants';
-import {ImageContainer} from '../../app_utils/container_components/ImageContainer';
+import { MISSING_IMG } from '../../../utils/js/constants';
+import {ImageContainer} from '../../../utils/container_components/ImageContainer';
 
 const EpisodeCardComponent = ({ episode, history, match }) => {
   const { id, title, openingCrawl, image } = episode;

@@ -1,6 +1,6 @@
 import React from 'react';
 import CharactersPageComponent from '../style_components/CharactersPageComponent';
-import SpinnerComponent from '../../app_custom_components/style_components/SpinnerComponent';
+import SpinnerComponent from '../../../utils/container_components/SpinnerComponent';
 
 import { loader } from 'graphql.macro';
 import { TWELVE_CHARACTERS } from '../../../utils/js/constants';
@@ -8,7 +8,7 @@ import { useQuery } from '@apollo/react-hooks';
  
 
 
-const GET_ALL_PEOPLE = loader('../../app_graphql_schemas/getAllPeople.gql');
+const GET_ALL_PEOPLE = loader('../../../graphql_schemas/getAllPeople.gql');
 
 const CharactersPageContainerComponent = () => {
 

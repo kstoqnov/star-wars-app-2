@@ -1,14 +1,14 @@
 import React from 'react';
 import EpisodePageComponent from '../style_components/EpisodePageComponent';
-import SpinnerComponent from '../../app_custom_components/style_components/SpinnerComponent';
+import SpinnerComponent from '../../../utils/container_components/SpinnerComponent';
 
 import { loader } from 'graphql.macro';
-import { FIVE_CHARACTERS } from '../../app_utils/js/constants';
+import { FIVE_CHARACTERS } from '../../../utils/js/constants';
 import { useQuery } from '@apollo/react-hooks';
 
 
 
-const GET_EPISODE = loader('../../app_graphql_schemas/getEpisode.gql');
+const GET_EPISODE = loader('../../../graphql_schemas/getEpisode.gql');
 
 const EpisodePageContainerComponent = ({ match }) => {
 

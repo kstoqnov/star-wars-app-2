@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Card } from '../css/starship.card.css';
-import { MISSING_IMG } from '../../app_utils/js/constants';
-import {ImageContainer} from '../../app_utils/container_components/ImageContainer';
+import { MISSING_IMG } from '../../../utils/js/constants';
+import {ImageContainer} from '../../../utils/container_components/ImageContainer';
 
 const StarShipCardComponent = ({ starship, onClick }) => {
   return (

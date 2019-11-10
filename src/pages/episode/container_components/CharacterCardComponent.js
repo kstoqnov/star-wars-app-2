@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { withRouter } from 'react-router-dom';
-import { MISSING_IMG } from '../../app_utils/js/constants';
+import { MISSING_IMG } from '../../../utils/js/constants';
 import { Card } from '../css/character-card.css';
-import {ImageContainer} from '../../app_utils/container_components/ImageContainer';
+import {ImageContainer} from '../../../utils/container_components/ImageContainer';
 
 const CharacterCardComponent = ({ character, history }) => {
   const { id, name, image } = character;
