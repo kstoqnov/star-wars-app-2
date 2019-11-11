@@ -1,17 +1,17 @@
 import React from 'react';
-import Header from './header/Header';
-import Main from './main/Main';
-import ErrorBoundaryComponent from './pages/error/components/ErrorBoundaryComponent';
+import Header from '../../header/Header';
+import Main from '../../main/Main';
+import ErrorBoundaryComponent from '../error/components/ErrorBoundaryComponent';
 
 import { loader } from 'graphql.macro';
-import { GlobalStyles } from './utils/css/global.css';
-import { lightTheme, darkTheme } from './utils/css/theme.css';
+import { GlobalStyles } from '../../utils/css/global.css';
+import { lightTheme, darkTheme } from '../../utils/css/theme.css';
 import { ThemeProvider } from 'styled-components';
 import { useQuery } from '@apollo/react-hooks';
+import {} from '../../graphql_schemas'
 
-
-const GET_THEME = loader('./graphql_schemas/getTheme.gql');
-const IS_LOGGED_IN = loader('./graphql_schemas/isLoggedIn.gql');
+const GET_THEME = loader('../../graphql_schemas/getTheme.gql');
+const IS_LOGGED_IN = loader('../../graphql_schemas/isLoggedIn.gql');
 
 function App() {
 
