@@ -2,8 +2,13 @@ import React from 'react';
 import CustomButtonComponent from '../../../utils/container_components/CustomButtonComponent';
 import FormInputComponent from './FormInputComponent';
 import LogoContainerComponent from '../../../header/logo/LogoContainerComponent';
+import PropTypes from 'prop-types';
+
+
 
 import { ErrorMessage, SignInContainer, FormContainer } from '../css/login.css';
+
+
 
 class LoginPageComponent extends React.Component {
   state = {
@@ -62,5 +67,12 @@ class LoginPageComponent extends React.Component {
     );
   }
 }
+
+
+FormInputComponent.propTypes = { 
+  email:PropTypes.string.isRequired, 
+  password:PropTypes.string.isRequired
+};
+
 
 export default LoginPageComponent;
