@@ -8,7 +8,8 @@ import { GlobalStyles } from '../../utils/css/global.css';
 import { lightTheme, darkTheme } from '../../utils/css/theme.css';
 import { ThemeProvider } from 'styled-components';
 import { useQuery } from '@apollo/react-hooks';
-import {} from '../../graphql_schemas'
+
+
 
 const GET_THEME = loader('../../graphql_schemas/getTheme.gql');
 const IS_LOGGED_IN = loader('../../graphql_schemas/isLoggedIn.gql');
