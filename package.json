@@ -5,6 +5,7 @@
   "dependencies": {
     "apollo-boost": "^0.4.4",
     "apollo-link-context": "^1.0.19",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
     "graphql": "^14.5.8",
     "graphql.macro": "^1.4.2",
     "husky": "^3.0.9",
@@ -22,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "set CI=true && react-scripts test --coverage --watchAll=false",
+    "test": "set CI=false && react-scripts test --coverage --watchAll=false",
     "format": "prettier-eslint —eslint-config-path ./.eslintrc.js --write '**/*.js’",
     "lint": "eslint . —ext .js",
     "eject": "react-scripts eject"
