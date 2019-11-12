@@ -65,4 +65,5 @@
     "babel-plugin-styled-components": "^1.10.6",
     "dotenv": "^8.2.0"
   }
+  
 }
